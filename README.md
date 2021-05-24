@@ -29,7 +29,6 @@ For more information, refer to the following documents:
 * [LIN Middleware API Reference Guide](https://cypresssemiconductorco.github.io/lin/html/index.html)
 * [ModusToolbox Software Environment, Quick Start Guide, Documentation, and Videos](https://www.cypress.com/products/modustoolbox-software-environment)
 * [CAT2 Peripheral Driver Library API Reference](https://cypresssemiconductorco.github.io/mtb-pdl-cat2/pdl_api_reference_manual/html/index.html)
-* [PSoC 4100S MAX](https://www.infineon.com/cms/en/product/microcontroller/32-bit-automotive-psoc-4-based-on-arm-cortex-m/psoc-4100s-max/)
 * [Infineon Technologies AG](https://www.infineon.com)
 
 ---
