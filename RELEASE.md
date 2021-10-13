@@ -4,6 +4,12 @@
 
 Refer to the [README.md](./README.md) and the [API Reference Guide](https://cypresssemiconductorco.github.io/lin/html/index.html) for a complete description of the LIN Middleware.
 
+## Known issues/limitations
+LIN middleware 1.0 is designed to work with the mtb-hal-cat2 v1.x releases.
+mtb-hal-cat2 version 2.x is incompatible with LIN 1.0 middleware. To use
+LIN 1.0, downgrade the mtb-hal-cat2 version to 1.x. The versions of the used
+libraries are configured on the Libraries tab of the Library Manager.
+
 ## Defect Fixes
 
 * Initial release
@@ -16,6 +22,7 @@ This version of the LIN Middleware was validated for the compatibility with the 
 | :---                                                    | :----:  |
 | ModusToolbox Software Environment                       | 2.3.1   |
 | CAT2 Peripheral Driver Library                          | 1.1.0   |
+| CAT2 Hardware Abstraction Layers                        | 1.0.1   |
 | Core Library                                            | 1.1.5   |
 | GCC Compiler                                            | 9.3.1   |
 | IAR Compiler                                            | 8.42    |
