@@ -1,6 +1,6 @@
 /***************************************************************************//**
  * \file mtb_lin.h
- * \version 1.0
+ * \version 1.10
  *
  * \brief
  * Provides the LIN middleware common API declarations.
@@ -67,8 +67,7 @@
  * this middleware. See the \ref section_lin_quick_start to start using the
  * middleware.
  *
- * Refer to the \ref section_lin_toolchain section for compatibility
- * information.
+ * Refer to the release notes for compatibility information.
  *
  * Refer to the \ref section_lin_spec_conformance section for
  * the API deviation from the specification.
@@ -81,7 +80,7 @@
  *******************************************************************************
  *
  * LIN middleware can be used in various Development Environments.
- * Refer to the \ref section_lin_toolchain section.
+ * Refer to the release notes.
  *
  * This quick start guide is for an environment with the configured:
  * * CAT2 Peripheral Driver Library (mtb-pdl-cat2)
@@ -274,40 +273,6 @@
  * </table>
  *
  *******************************************************************************
- * \section section_lin_toolchain Supported Software and Tools
- *******************************************************************************
- *
- * This version of the LIN middleware was validated for the compatibility
- * with the following software and tools:
- *
- * <table class="doxtable">
- *   <tr>
- *     <th>Software and Tools</th>
- *     <th>Version</th>
- *   </tr>
- *   <tr>
- *     <td>ModusToolbox Software Environment</td>
- *     <td>2.3.1</td>
- *   </tr>
- *   <tr>
- *     <td>CAT2 Peripheral Driver Library</td>
- *     <td>1.1.0</td>
- *   </tr>
- *   <tr>
- *     <td>GCC Compiler</td>
- *     <td>9.3.1</td>
- *   </tr>
- *   <tr>
- *     <td>IAR Compiler</td>
- *     <td>8.42</td>
- *   </tr>
- *   <tr>
- *     <td>Arm Compiler 6</td>
- *     <td>6.13</td>
- *   </tr>
- * </table>
- *
- *******************************************************************************
  * \section section_lin_MISRA MISRA-C Compliance
  *******************************************************************************
  *
@@ -435,6 +400,11 @@
  * <table class="doxtable">
  *   <tr><th>Version</th><th>Changes</th><th>Reason for Change</th></tr>
  *   <tr>
+ *     <td>1.10</td>
+ *     <td>Added CAT2 Hardware Abstraction Layers (mtb-hal-cat2) 2.x support./td>
+ *     <td></td>
+ *   </tr>
+ *   <tr>
  *     <td>1.0</td>
  *     <td>Initial Version</td>
  *     <td></td>
@@ -542,10 +512,10 @@
 #define MTB_LIN_MW_VERSION_MAJOR                (1)
 
 /** LIN middleware minor version */
-#define MTB_LIN_MW_VERSION_MINOR                (0)
+#define MTB_LIN_MW_VERSION_MINOR                (10)
 
 /** LIN middleware version */
-#define MTB_LIN_MW_VERSION                      (100)
+#define MTB_LIN_MW_VERSION                      (110)
 
 /* The SCB driver version 3.0 or above required */
 #define MTB_LIN_SCB_DRV_VERSION_MAJOR_REQUIRED  (3)

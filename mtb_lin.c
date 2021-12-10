@@ -1,6 +1,6 @@
 /***************************************************************************//**
  * \file mtb_lin.c
- * \version 1.0
+ * \version 1.10
  *
  * \brief
  * Provides the LIN middleware common API implementation.

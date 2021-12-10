@@ -1,6 +1,6 @@
 /***************************************************************************//**
  * \file mtb_lin_ld.h
- * \version 1.0
+ * \version 1.10
  *
  * \brief
  * Provides the LIN middleware node configuration and identification API
@@ -205,7 +205,7 @@ l_bool mtb_lin_check_product_id(volatile const l_u8 frame_data[],
  */
 #define LD_QUEUE_EMPTY                              (0x07U)
 
-/** The transmit queue contains entires, but is not full */
+/** The transmit queue contains entries, but is not full */
 #define LD_QUEUE_AVAILABLE                          (0x08U)
 
 /** The transmit queue is full and cannot accept further frames */

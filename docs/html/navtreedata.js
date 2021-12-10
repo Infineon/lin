@@ -40,7 +40,6 @@ var NAVTREE =
       [ "Specification Conformance", "index.html#section_lin_spec_conformance", null ],
       [ "API Changes between PSoC Creator Component and Middleware", "index.html#section_lin_migration", null ]
     ] ],
-    [ "Supported Software and Tools", "index.html#section_lin_toolchain", null ],
     [ "MISRA-C Compliance", "index.html#section_lin_MISRA", null ],
     [ "Changelog", "index.html#section_lin_changelog", null ],
     [ "More Information", "index.html#section_lin_more_information", null ],

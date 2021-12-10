@@ -1,6 +1,6 @@
 /***************************************************************************//**
  * \file mtb_lin_ld.c
- * \version 1.0
+ * \version 1.10
  *
  * \brief
  * Provides the LIN middleware node configuration and identification API

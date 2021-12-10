@@ -106,12 +106,12 @@ $(document).ready(function(){initNavTree('index.html','');});
 <h1><a class="anchor" id="section_lin_general_description"></a>
 General Description</h1>
 <p>Include mtb_lin.h to get access to all the functions and other declarations in this middleware. See the <a class="el" href="index.html#section_lin_quick_start">Quick Start Guide</a> to start using the middleware.</p>
-<p>Refer to the <a class="el" href="index.html#section_lin_toolchain">Supported Software and Tools</a> section for compatibility information.</p>
+<p>Refer to the release notes for compatibility information.</p>
 <p>Refer to the <a class="el" href="index.html#section_lin_spec_conformance">Specification Conformance</a> section for the API deviation from the specification.</p>
 <p>The <a class="el" href="index.html#section_lin_configuration_considerations">Configuration Considerations</a> section provides the guidance for all operation modes and use cases.</p>
 <h1><a class="anchor" id="section_lin_quick_start"></a>
 Quick Start Guide</h1>
-<p>LIN middleware can be used in various Development Environments. Refer to the <a class="el" href="index.html#section_lin_toolchain">Supported Software and Tools</a> section.</p>
+<p>LIN middleware can be used in various Development Environments. Refer to the release notes.</p>
 <p>This quick start guide is for an environment with the configured:</p><ul>
 <li>CAT2 Peripheral Driver Library (mtb-pdl-cat2)</li>
 <li>ModusToolbox Hardware Abstraction Layer (mtb-hal-cat2)</li>
@@ -197,23 +197,6 @@ API Changes between PSoC Creator Component and Middleware</h2>
 <tr>
 <td>3 </td><td>All the interrupt service routines are initialized inside of the component - no any actions required on the application level.  </td><td>The communication and inactivity interrupt service routines should be implemented on the application level. Refer to the <a class="el" href="index.html#subsection_qsg_step3">STEP 3: Update main.c</a> section for the more details.   </td></tr>
 </table>
-<h1><a class="anchor" id="section_lin_toolchain"></a>
-Supported Software and Tools</h1>
-<p>This version of the LIN middleware was validated for the compatibility with the following software and tools:</p>
-<table class="doxtable">
-<tr>
-<th>Software and Tools </th><th>Version  </th></tr>
-<tr>
-<td>ModusToolbox Software Environment </td><td>2.3.1  </td></tr>
-<tr>
-<td>CAT2 Peripheral Driver Library </td><td>1.1.0  </td></tr>
-<tr>
-<td>GCC Compiler </td><td>9.3.1  </td></tr>
-<tr>
-<td>IAR Compiler </td><td>8.42  </td></tr>
-<tr>
-<td>Arm Compiler 6 </td><td>6.13  </td></tr>
-</table>
 <h1><a class="anchor" id="section_lin_MISRA"></a>
 MISRA-C Compliance</h1>
 <p>This section describes MISRA-C:2012 compliance and deviations for the LIN.</p>
@@ -263,6 +246,8 @@ Changelog</h1>
 <table class="doxtable">
 <tr>
 <th>Version</th><th>Changes</th><th>Reason for Change </th></tr>
+<tr>
+<td>1.10 </td><td>Added CAT2 Hardware Abstraction Layers (mtb-hal-cat2) 2.x support./td&gt; </td><td></td></tr>
 <tr>
 <td>1.0 </td><td>Initial Version </td><td></td></tr>
 </table>

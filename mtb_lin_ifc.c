@@ -1,6 +1,6 @@
 /***************************************************************************//**
  * \file mtb_lin_ifc.c
- * \version 1.0
+ * \version 1.10
  *
  * \brief
  * Provides the LIN middleware signal interaction and notification API
@@ -273,8 +273,14 @@ l_bool l_ifc_init(l_ifc_handle iii, mtb_stc_lin_context_t* context, cyhal_gpio_t
     }
     else
     {
+        #if CYHAL_API_VERSION >= 2
+        rslt =
+            cyhal_uart_init(&context->scb_uart_obj, tx, rx, NC, NC, &context->scb_uart_clk,
+                            &uart_config);
+        #else
         rslt =
             cyhal_uart_init(&context->scb_uart_obj, tx, rx, &context->scb_uart_clk, &uart_config);
+        #endif
         if (CY_RSLT_SUCCESS != rslt)
         {
             /* Release the peripheral divider */
@@ -1788,7 +1794,7 @@ __STATIC_INLINE void l_ifc_rx_fsm_1_pid_tl(mtb_stc_lin_context_t* context)
 * Function Name: l_ifc_rx_fsm_1_pid_tl_mrf
 ****************************************************************************//**
 *
-*  Handles the PID receive in the cotext of the transport layer, when Master
+*  Handles the PID receive in the context of the transport layer, when Master
 *  Request Frame (MRF) PID received.
 *
 * \param context
@@ -1906,7 +1912,7 @@ __STATIC_INLINE void l_ifc_rx_fsm_1_pid_tl_srf(mtb_stc_lin_context_t* context)
 * Function Name: l_ifc_rx_fsm_1_pid_tl_srf_raw
 ****************************************************************************//**
 *
-*  Handles the PID receive in the cotext of the transport layer in Raw mode,
+*  Handles the PID receive in the context of the transport layer in Raw mode,
 *  when Slave Response Frame (SRF) PID received.
 *
 * \param context
@@ -1978,7 +1984,7 @@ __STATIC_INLINE void l_ifc_rx_fsm_1_pid_tl_srf_raw(mtb_stc_lin_context_t* contex
 * Function Name: l_ifc_rx_fsm_1_pid_tl_srf_cooked
 ****************************************************************************//**
 *
-*  Handles the PID receive in the cotext of the transport layer in Cooked mode,
+*  Handles the PID receive in the context of the transport layer in Cooked mode,
 *  when Slave Response Frame (SRF) PID received.
 *
 * \param context
@@ -2303,7 +2309,7 @@ __STATIC_INLINE void l_ifc_rx_fsm_1_pid_subscribe(mtb_stc_lin_context_t* context
 * Function Name: l_ifc_rx_fsm_2_tx
 ****************************************************************************//**
 *
-*  Hanldes data transmit.
+*  Handles data transmit.
 *
 * \param context
 *  The pointer to the context structure \ref mtb_stc_lin_context_t
